@@ -1,6 +1,6 @@
 {
   "name": "inquirer-checkbox-autocomplete-prompt",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "An autocomplete prompt plugin for inquirer.",
   "main": "index.js",
   "directories": {

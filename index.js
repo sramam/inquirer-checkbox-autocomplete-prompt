@@ -202,7 +202,7 @@ class CheckboxAutoCompletePrompt extends Base {
 
       if (searchTerm) {
         choices = fuzzy.filter(searchTerm || '', self.source.realChoices, {
-          extract: (el) => el.name || el.short || el.value
+          extract: (el) => el.name || el.short || el.value || el
         }).map((el) => el.original);
       }
 
@@ -229,7 +229,7 @@ class CheckboxAutoCompletePrompt extends Base {
         if (searchTerm) {
           choices = fuzzy
             .filter(searchTerm || '', choices, {
-              extract: (el) => el.name || el.short || el.value
+              extract: (el) => el.name || el.short || el.value || el
             })
             .filter(function(choice) {
               return choice.type !== 'separator';

@@ -117,7 +117,7 @@ inquirer.prompt([{
     // choices: states,
     validate: function(answer) {
       if (answer.length < 1) {
-        return 'You must choose at least one topping.';
+        return 'You must choose at least one state.';
       }
       return true;
     },
